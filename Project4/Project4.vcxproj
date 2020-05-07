@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{D84D6453-13F2-4468-9EDF-2F22EFF35A93}</ProjectGuid>
+    <RootNamespace>Project4</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\birdh\source\repos\Project4\Project4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4308</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="anbox\android\intent.h" />
+    <ClInclude Include="anbox\android\ip_config_builder.h" />
+    <ClInclude Include="anbox\application\database.h" />
+    <ClInclude Include="anbox\application\launcher_storage.h" />
+    <ClInclude Include="anbox\build\config.h" />
+    <ClInclude Include="anbox\cmds\session_manager_display.h" />
+    <ClInclude Include="anbox\common\binary_writer.h" />
+    <ClInclude Include="anbox\common\dispatcher.h" />
+    <ClInclude Include="anbox\common\fd.h" />
+    <ClInclude Include="anbox\common\fd_sets.h" />
+    <ClInclude Include="anbox\common\message_channel.h" />
+    <ClInclude Include="anbox\common\scope_ptr.h" />
+    <ClInclude Include="anbox\common\small_vector.h" />
+    <ClInclude Include="anbox\common\type_traits.h" />
+    <ClInclude Include="anbox\common\variable_length_array.h" />
+    <ClInclude Include="anbox\common\wait_handle.h" />
+    <ClInclude Include="anbox\do_not_copy_or_move.h" />
+    <ClInclude Include="anbox\graphics\buffered_io_stream.h" />
+    <ClInclude Include="anbox\graphics\buffer_queue.h" />
+    <ClInclude Include="anbox\graphics\density.h" />
+    <ClInclude Include="anbox\graphics\emugl\ColorBuffer.h" />
+    <ClInclude Include="anbox\graphics\emugl\DispatchTables.h" />
+    <ClInclude Include="anbox\graphics\emugl\DisplayManager.h" />
+    <ClInclude Include="anbox\graphics\emugl\ReadBuffer.h" />
+    <ClInclude Include="anbox\graphics\emugl\Renderable.h" />
+    <ClInclude Include="anbox\graphics\emugl\RenderApi.h" />
+    <ClInclude Include="anbox\graphics\emugl\RenderContext.h" />
+    <ClInclude Include="anbox\graphics\emugl\RenderControl.h" />
+    <ClInclude Include="anbox\graphics\emugl\Renderer.h" />
+    <ClInclude Include="anbox\graphics\emugl\RendererConfig.h" />
+    <ClInclude Include="anbox\graphics\emugl\RenderThread.h" />
+    <ClInclude Include="anbox\graphics\emugl\RenderThreadInfo.h" />
+    <ClInclude Include="anbox\graphics\emugl\TextureDraw.h" />
+    <ClInclude Include="anbox\graphics\emugl\TextureResize.h" />
+    <ClInclude Include="anbox\graphics\emugl\TimeUtils.h" />
+    <ClInclude Include="anbox\graphics\emugl\WindowSurface.h" />
+    <ClInclude Include="anbox\graphics\gl_extensions.h" />
+    <ClInclude Include="anbox\graphics\gl_renderer_server.h" />
+    <ClInclude Include="anbox\graphics\layer_composer.h" />
+    <ClInclude Include="anbox\graphics\multi_window_composer_strategy.h" />
+    <ClInclude Include="anbox\graphics\opengles_message_processor.h" />
+    <ClInclude Include="anbox\graphics\primitives.h" />
+    <ClInclude Include="anbox\graphics\program_family.h" />
+    <ClInclude Include="anbox\graphics\rect.h" />
+    <ClInclude Include="anbox\graphics\renderer.h" />
+    <ClInclude Include="anbox\graphics\single_window_composer_strategy.h" />
+    <ClInclude Include="anbox\input\device.h" />
+    <ClInclude Include="anbox\input\manager.h" />
+    <ClInclude Include="anbox\logger.h" />
+    <ClInclude Include="anbox\network\base_socket_messenger.h" />
+    <ClInclude Include="anbox\network\connections.h" />
+    <ClInclude Include="anbox\network\connection_context.h" />
+    <ClInclude Include="anbox\network\connection_creator.h" />
+    <ClInclude Include="anbox\network\connector.h" />
+    <ClInclude Include="anbox\network\credentials.h" />
+    <ClInclude Include="anbox\network\delegate_connection_creator.h" />
+    <ClInclude Include="anbox\network\delegate_message_processor.h" />
+    <ClInclude Include="anbox\network\message_processor.h" />
+    <ClInclude Include="anbox\network\message_receiver.h" />
+    <ClInclude Include="anbox\network\message_sender.h" />
+    <ClInclude Include="anbox\network\socket_connection.h" />
+    <ClInclude Include="anbox\network\socket_helper.h" />
+    <ClInclude Include="anbox\network\socket_messenger.h" />
+    <ClInclude Include="anbox\network\tcp_socket_connector.h" />
+    <ClInclude Include="anbox\network\tcp_socket_messenger.h" />
+    <ClInclude Include="anbox\platform\base_platform.h" />
+    <ClInclude Include="anbox\platform\null\platformnull.h" />
+    <ClInclude Include="anbox\platform\sdl\keycode_converter.h" />
+    <ClInclude Include="anbox\platform\sdl\platform.h" />
+    <ClInclude Include="anbox\platform\sdl\sdl_wrapper.h" />
+    <ClInclude Include="anbox\platform\sdl\windowplatform.h" />
+    <ClInclude Include="anbox\posix_header.h" />
+    <ClInclude Include="anbox\qemu\adb_message_processor.h" />
+    <ClInclude Include="anbox\qemu\at_parser.h" />
+    <ClInclude Include="anbox\qemu\bootanimation_message_processor.h" />
+    <ClInclude Include="anbox\qemu\boot_properties_message_processor.h" />
+    <ClInclude Include="anbox\qemu\camera_message_processor.h" />
+    <ClInclude Include="anbox\qemu\fingerprint_message_processor.h" />
+    <ClInclude Include="anbox\qemu\gsm_message_processor.h" />
+    <ClInclude Include="anbox\qemu\hwcontrol_message_processor.h" />
+    <ClInclude Include="anbox\qemu\null_message_processor.h" />
+    <ClInclude Include="anbox\qemu\pipe_connection_creator.h" />
+    <ClInclude Include="anbox\qemu\qemud_message_processor.h" />
+    <ClInclude Include="anbox\qemu\sensors_message_processor.h" />
+    <ClInclude Include="anbox\runtime.h" />
+    <ClInclude Include="anbox\system_configuration.h" />
+    <ClInclude Include="anbox\utils.h" />
+    <ClInclude Include="anbox\wm\display.h" />
+    <ClInclude Include="anbox\wm\manager.h" />
+    <ClInclude Include="anbox\wm\single_window_manager.h" />
+    <ClInclude Include="anbox\wm\stack.h" />
+    <ClInclude Include="anbox\wm\task.h" />
+    <ClInclude Include="anbox\wm\window.h" />
+    <ClInclude Include="anbox\wm\window_state.h" />
+    <ClInclude Include="external\android-emugl\host\include\ETC1\etc1.h" />
+    <ClInclude Include="external\android-emugl\host\include\GLES\gl.h" />
+    <ClInclude Include="external\android-emugl\host\include\GLES\glext.h" />
+    <ClInclude Include="external\android-emugl\host\include\GLES\glplatform.h" />
+    <ClInclude Include="external\android-emugl\host\include\libOpenglRender\IOStream.h" />
+    <ClInclude Include="external\android-emugl\host\include\OpenGLESDispatch\EGLDispatch.h" />
+    <ClInclude Include="external\android-emugl\host\include\OpenGLESDispatch\gldefs.h" />
+    <ClInclude Include="external\android-emugl\host\include\OpenGLESDispatch\gles1_extensions_functions.h" />
+    <ClInclude Include="external\android-emugl\host\include\OpenGLESDispatch\gles1_only_functions.h" />
+    <ClInclude Include="external\android-emugl\host\include\OpenGLESDispatch\gles2_extensions_functions.h" />
+    <ClInclude Include="external\android-emugl\host\include\OpenGLESDispatch\gles2_only_functions.h" />
+    <ClInclude Include="external\android-emugl\host\include\OpenGLESDispatch\gles3_only_functions.h" />
+    <ClInclude Include="external\android-emugl\host\include\OpenGLESDispatch\GLESv1Dispatch.h" />
+    <ClInclude Include="external\android-emugl\host\include\OpenGLESDispatch\GLESv2Dispatch.h" />
+    <ClInclude Include="external\android-emugl\host\include\OpenGLESDispatch\gles_common_functions.h" />
+    <ClInclude Include="external\android-emugl\host\include\OpenGLESDispatch\gles_extensions_functions.h" />
+    <ClInclude Include="external\android-emugl\host\include\OpenGLESDispatch\gles_functions.h" />
+    <ClInclude Include="external\android-emugl\host\include\OpenGLESDispatch\RenderEGL_extensions_functions.h" />
+    <ClInclude Include="external\android-emugl\host\include\OpenGLESDispatch\RenderEGL_functions.h" />
+    <ClInclude Include="external\android-emugl\host\libs\GLESv1_dec\gles1_dec.h" />
+    <ClInclude Include="external\android-emugl\host\libs\GLESv1_dec\gles1_opcodes.h" />
+    <ClInclude Include="external\android-emugl\host\libs\GLESv1_dec\gles1_server_context.h" />
+    <ClInclude Include="external\android-emugl\host\libs\GLESv1_dec\gles1_server_proc.h" />
+    <ClInclude Include="external\android-emugl\host\libs\GLESv1_dec\gles1_types.h" />
+    <ClInclude Include="external\android-emugl\host\libs\GLESv1_dec\GLESv1Decoder.h" />
+    <ClInclude Include="external\android-emugl\host\libs\GLESv1_dec\renderControl_dec.h" />
+    <ClInclude Include="external\android-emugl\host\libs\GLESv1_dec\renderControl_opcodes.h" />
+    <ClInclude Include="external\android-emugl\host\libs\GLESv1_dec\renderControl_server_context.h" />
+    <ClInclude Include="external\android-emugl\host\libs\GLESv1_dec\renderControl_server_proc.h" />
+    <ClInclude Include="external\android-emugl\host\libs\GLESv2_dec\gles2_dec.h" />
+    <ClInclude Include="external\android-emugl\host\libs\GLESv2_dec\gles2_opcodes.h" />
+    <ClInclude Include="external\android-emugl\host\libs\GLESv2_dec\gles2_server_context.h" />
+    <ClInclude Include="external\android-emugl\host\libs\GLESv2_dec\gles2_server_proc.h" />
+    <ClInclude Include="external\android-emugl\host\libs\GLESv2_dec\gles2_types.h" />
+    <ClInclude Include="external\android-emugl\host\libs\GLESv2_dec\GLESv2Decoder.h" />
+    <ClInclude Include="external\android-emugl\host\libs\renderControl_dec\renderControl_types.h" />
+    <ClInclude Include="external\android-emugl\shared\emugl\common\condition_variable.h" />
+    <ClInclude Include="external\android-emugl\shared\emugl\common\crash_reporter.h" />
+    <ClInclude Include="external\android-emugl\shared\emugl\common\id_to_object_map.h" />
+    <ClInclude Include="external\android-emugl\shared\emugl\common\lazy_instance.h" />
+    <ClInclude Include="external\android-emugl\shared\emugl\common\logging.h" />
+    <ClInclude Include="external\android-emugl\shared\emugl\common\message_channel.h" />
+    <ClInclude Include="external\android-emugl\shared\emugl\common\mutex.h" />
+    <ClInclude Include="external\android-emugl\shared\emugl\common\pod_vector.h" />
+    <ClInclude Include="external\android-emugl\shared\emugl\common\scoped_pointer_vector.h" />
+    <ClInclude Include="external\android-emugl\shared\emugl\common\shared_library.h" />
+    <ClInclude Include="external\android-emugl\shared\emugl\common\smart_ptr.h" />
+    <ClInclude Include="external\android-emugl\shared\emugl\common\sockets.h" />
+    <ClInclude Include="external\android-emugl\shared\emugl\common\testing\test_thread.h" />
+    <ClInclude Include="external\android-emugl\shared\emugl\common\thread.h" />
+    <ClInclude Include="external\android-emugl\shared\emugl\common\thread_store.h" />
+    <ClInclude Include="external\android-emugl\shared\emugl\common\unique_integer_map.h" />
+    <ClInclude Include="external\android-emugl\shared\OpenglCodecCommon\ChecksumCalculator.h" />
+    <ClInclude Include="external\android-emugl\shared\OpenglCodecCommon\ChecksumCalculatorThreadInfo.h" />
+    <ClInclude Include="external\android-emugl\shared\OpenglCodecCommon\ErrorLog.h" />
+    <ClInclude Include="external\android-emugl\shared\OpenglCodecCommon\GLDecoderContextData.h" />
+    <ClInclude Include="external\android-emugl\shared\OpenglCodecCommon\glUtils.h" />
+    <ClInclude Include="external\android-emugl\shared\OpenglCodecCommon\gl_base_types.h" />
+    <ClInclude Include="external\android-emugl\shared\OpenglCodecCommon\ProtocolUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="anbox\android\intent.cpp" />
+    <ClCompile Include="anbox\android\ip_config_builder.cpp" />
+    <ClCompile Include="anbox\application\database.cpp" />
+    <ClCompile Include="anbox\application\launcher_storage.cpp" />
+    <ClCompile Include="anbox\cmds\session_manager_display.cpp" />
+    <ClCompile Include="anbox\common\binary_writer.cpp" />
+    <ClCompile Include="anbox\common\dispatcher.cpp" />
+    <ClCompile Include="anbox\common\fd.cpp" />
+    <ClCompile Include="anbox\common\message_channel.cpp" />
+    <ClCompile Include="anbox\common\wait_handle.cpp" />
+    <ClCompile Include="anbox\graphics\buffered_io_stream.cpp" />
+    <ClCompile Include="anbox\graphics\buffer_queue.cpp" />
+    <ClCompile Include="anbox\graphics\density.cpp" />
+    <ClCompile Include="anbox\graphics\emugl\ColorBuffer.cpp" />
+    <ClCompile Include="anbox\graphics\emugl\DisplayManager.cpp" />
+    <ClCompile Include="anbox\graphics\emugl\ReadBuffer.cpp" />
+    <ClCompile Include="anbox\graphics\emugl\Renderable.cpp" />
+    <ClCompile Include="anbox\graphics\emugl\RenderApi.cpp" />
+    <ClCompile Include="anbox\graphics\emugl\RenderContext.cpp" />
+    <ClCompile Include="anbox\graphics\emugl\RenderControl.cpp" />
+    <ClCompile Include="anbox\graphics\emugl\Renderer.cpp" />
+    <ClCompile Include="anbox\graphics\emugl\RendererConfig.cpp" />
+    <ClCompile Include="anbox\graphics\emugl\RenderThread.cpp" />
+    <ClCompile Include="anbox\graphics\emugl\RenderThreadInfo.cpp" />
+    <ClCompile Include="anbox\graphics\emugl\TextureDraw.cpp" />
+    <ClCompile Include="anbox\graphics\emugl\TextureResize.cpp" />
+    <ClCompile Include="anbox\graphics\emugl\TimeUtils.cpp" />
+    <ClCompile Include="anbox\graphics\emugl\WindowSurface.cpp" />
+    <ClCompile Include="anbox\graphics\gl_renderer_server.cpp" />
+    <ClCompile Include="anbox\graphics\layer_composer.cpp" />
+    <ClCompile Include="anbox\graphics\multi_window_composer_strategy.cpp" />
+    <ClCompile Include="anbox\graphics\opengles_message_processor.cpp" />
+    <ClCompile Include="anbox\graphics\program_family.cpp" />
+    <ClCompile Include="anbox\graphics\rect.cpp" />
+    <ClCompile Include="anbox\graphics\single_window_composer_strategy.cpp" />
+    <ClCompile Include="anbox\input\device.cpp" />
+    <ClCompile Include="anbox\input\manager.cpp" />
+    <ClCompile Include="anbox\logger.cpp" />
+    <ClCompile Include="anbox\network\base_socket_messenger.cpp" />
+    <ClCompile Include="anbox\network\connection_context.cpp" />
+    <ClCompile Include="anbox\network\connection_creator.cpp" />
+    <ClCompile Include="anbox\network\credentials.cpp" />
+    <ClCompile Include="anbox\network\delegate_message_processor.cpp" />
+    <ClCompile Include="anbox\network\socket_connection.cpp" />
+    <ClCompile Include="anbox\network\socket_helper.cpp" />
+    <ClCompile Include="anbox\network\socket_messenger.cpp" />
+    <ClCompile Include="anbox\network\tcp_socket_connector.cpp" />
+    <ClCompile Include="anbox\network\tcp_socket_messenger.cpp" />
+    <ClCompile Include="anbox\platform\base_platform.cpp" />
+    <ClCompile Include="anbox\platform\null\platformnull.cpp" />
+    <ClCompile Include="anbox\platform\sdl\keycode_converter.cpp" />
+    <ClCompile Include="anbox\platform\sdl\platform.cpp" />
+    <ClCompile Include="anbox\platform\sdl\windowplatform.cpp" />
+    <ClCompile Include="anbox\qemu\adb_message_processor.cpp" />
+    <ClCompile Include="anbox\qemu\at_parser.cpp" />
+    <ClCompile Include="anbox\qemu\bootanimation_message_processor.cpp" />
+    <ClCompile Include="anbox\qemu\boot_properties_message_processor.cpp" />
+    <ClCompile Include="anbox\qemu\camera_message_processor.cpp" />
+    <ClCompile Include="anbox\qemu\fingerprint_message_processor.cpp" />
+    <ClCompile Include="anbox\qemu\gsm_message_processor.cpp" />
+    <ClCompile Include="anbox\qemu\hwcontrol_message_processor.cpp" />
+    <ClCompile Include="anbox\qemu\null_message_processor.cpp" />
+    <ClCompile Include="anbox\qemu\pipe_connection_creator.cpp" />
+    <ClCompile Include="anbox\qemu\qemud_message_processor.cpp" />
+    <ClCompile Include="anbox\qemu\sensors_message_processor.cpp" />
+    <ClCompile Include="anbox\runtime.cpp" />
+    <ClCompile Include="anbox\system_configuration.cpp" />
+    <ClCompile Include="anbox\utils.cpp" />
+    <ClCompile Include="anbox\wm\display.cpp" />
+    <ClCompile Include="anbox\wm\manager.cpp" />
+    <ClCompile Include="anbox\wm\single_window_manager.cpp" />
+    <ClCompile Include="anbox\wm\stack.cpp" />
+    <ClCompile Include="anbox\wm\task.cpp" />
+    <ClCompile Include="anbox\wm\window.cpp" />
+    <ClCompile Include="anbox\wm\window_state.cpp" />
+    <ClCompile Include="external\android-emugl\host\libs\GLESv1_dec\gles1_dec.cpp" />
+    <ClCompile Include="external\android-emugl\host\libs\GLESv1_dec\gles1_server_context.cpp" />
+    <ClCompile Include="external\android-emugl\host\libs\GLESv1_dec\GLESv1Decoder.cpp" />
+    <ClCompile Include="external\android-emugl\host\libs\GLESv1_dec\renderControl_dec.cpp" />
+    <ClCompile Include="external\android-emugl\host\libs\GLESv1_dec\renderControl_server_context.cpp" />
+    <ClCompile Include="external\android-emugl\host\libs\GLESv2_dec\gles2_dec.cpp" />
+    <ClCompile Include="external\android-emugl\host\libs\GLESv2_dec\gles2_server_context.cpp" />
+    <ClCompile Include="external\android-emugl\host\libs\GLESv2_dec\GLESv2Decoder.cpp" />
+    <ClCompile Include="external\android-emugl\host\libs\libOpenGLESDispatch\EGLDispatch.cpp" />
+    <ClCompile Include="external\android-emugl\host\libs\libOpenGLESDispatch\GLESv1Dispatch.cpp" />
+    <ClCompile Include="external\android-emugl\host\libs\libOpenGLESDispatch\GLESv2Dispatch.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\condition_variable_unittest.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\condition_variable_win32.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\crash_reporter.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\id_to_object_map.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\id_to_object_map_unittest.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\lazy_instance.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\lazy_instance_unittest.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\logging.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\message_channel.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\message_channel_unittest.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\mutex_unittest.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\pod_vector.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\pod_vector_unittest.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\shared_library.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\shared_library_unittest.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\smart_ptr.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\smart_ptr_unittest.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\sockets.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\testing\test_shared_library.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\thread_store.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\thread_store_unittest.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\thread_unittest.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\thread_win32.cpp" />
+    <ClCompile Include="external\android-emugl\shared\emugl\common\unique_integer_map_unittest.cpp" />
+    <ClCompile Include="external\android-emugl\shared\OpenglCodecCommon\ChecksumCalculator.cpp" />
+    <ClCompile Include="external\android-emugl\shared\OpenglCodecCommon\ChecksumCalculatorThreadInfo.cpp" />
+    <ClCompile Include="external\android-emugl\shared\OpenglCodecCommon\glUtils.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
