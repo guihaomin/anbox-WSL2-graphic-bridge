@@ -7,7 +7,7 @@ The bridging process is from unix pipe(qemu_pipe) on WSL2 to a given WSL2 IP por
 Open sln file in visual studio and install all dependency using vcpkg.<br>
 The graphic translator library is loaded at run time, you have to compile swiftshader egl library for this project.
 ## Issues
-There are bugs in window connection part that graphic rendering result cannot be seen on window.(Would really appreciate is anyone has hint on how to solve this!)
+There are bugs in window connection part that graphic rendering result cannot be seen on window.(Would really appreciate if anyone has hint on how to solve this!)
 ## Future
 The input bridging is not implemented.
 # Acknowledgement
